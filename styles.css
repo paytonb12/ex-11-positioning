@@ -1,0 +1,66 @@
+html {
+  font-family: "Josefin Sans", sans-serif;
+
+}
+
+p {
+    padding: 15px;
+    font-size: 16px ;
+}
+
+body {
+    background-color: beige;
+
+}
+
+.wrapper {
+    max-width: 600px;
+    margin:0px auto;
+}
+
+.header-nav {
+    background-color: darkcyan;
+    padding: 10px;
+    
+}
+
+.header-nav-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.header-link {
+    
+    padding: 10px;
+    display: block;
+}
+
+.dropdown{
+    position: absolute;
+    background-color: blueviolet;
+    display: none;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.has-dropdown:hover .dropdown{
+    display: block;
+}
+
+.header-link {
+    color: rgb(0, 63, 63)
+}
+
+.header-link:hover {
+    background-color: rgb(194, 117, 1);
+}
+
+.code-highlight{
+    background-color: rgb(194, 117, 1);
+    color: aliceblue;
+    padding: 2px;
+    border-radius: 10px;
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <title>ex-11</title>
+        <link href="styles.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="wrapper">
+        <h1>CSS Positioning: Drop Down Menu</h1>
+        <h2><code class="code-highlight">position: relative</code> and <code class="code-highlight">position: absolute</code></h2>
+        </div>
+        <nav class="header-nav">
+            <ul class="wrapper header-nav-list">
+                <li><a href="" class="header-link">Home</a></li>
+            
+                <li><a href="" class="header-link">About</a></li>
+                
+                <li class="has-dropdown">
+                    <a href="" class="header-link">Products</a>
+            
+            
+                    <ul class="dropdown">
+                        <li>Widgets</li>
+                        <li>Gadgets</li>
+                        
+                        <li>Gizmos</li>
+                    </ul>
+
+                </li>
+                
+                
+                <li><a href="" class="header-link">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper">
+        <p>The parent list item needs <code class="code-highlight">position: relative</code> so that the child submenu can be positioned with <code class="code-highlight">position: absolute relative</code> to it — not relative to the entire page.</p>
+        <p>The submenu (a nested <code class="code-highlight">ul</code> inside one of the <code class="code-highlight">li</code> elements) is hidden by default with display: none. When the user hovers over the parent list item, the submenu is shown with <code class="code-highlight">display: block</code>.</p>
+        <p>The key concept: <code class="code-highlight">position: absolute </code>places an element relative to its nearest ancestor that has <code class="code-highlight">position: relative</code>. Without that ancestor, it positions relative to the page — which is almost never what you want.</p>
+    </div>
+    </main>
+    
+    </body>
+    </html>
